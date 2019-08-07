@@ -1,0 +1,239 @@
+﻿* {
+      box-sizing: border-box;
+    }
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: darkslategrey;
+      padding: 5px;
+      color: white;
+}
+.modal {
+      display: none; /* Hidden by default*/
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+}
+.modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* position on the screen: 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      max-width: 60%; 
+}
+.imgcontainer {
+      text-align: center;
+      margin: 12px 0 12px 0;
+      position: relative;
+    }
+.close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+}
+.avatar {
+      margin-top: 30px;
+      border-radius: 50%;
+      padding: 10px;
+      width: 60%;
+}
+.container{
+      padding: 16px;
+      color: black;
+      overflow: auto;
+}
+input[type='text'], input[type='password']{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+}
+label{
+      color: black;
+      float: left;
+}
+button{
+      background-color: gray;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+}
+button:hover{
+      opacity: 0.8;
+}
+.cancelbtn{
+      width: auto;
+      padding: 10px 18px;
+      background-color: green;
+      margin-top: 5px;
+}
+span.psw{
+      float: right;
+      padding-top: 16px;
+}
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+      -webkit-animation: animatezoom 0.4s;
+      animation: animatezoom 0.4s;
+    }
+#site_logo{
+      width: 60px;
+      left: 25px;
+      top: 0;
+}
+header {
+      height: auto;
+      font-size: 18px;
+      border: 1px dotted white;
+      text-align: center;
+      background-image: url(vapor1.jpg);
+      background-size: cover;
+}      
+header img{
+      margin: 0px;
+      float: left;
+}
+header button{
+      margin: 0px;
+      float: right;
+}      
+.topnav {
+      overflow: hidden;
+}
+.topnav a {
+      float: left;
+      padding: 20px;
+      color: #f2f2f2;
+      text-decoration: none;
+}
+.topnav select{
+      float: right;
+      padding: 20px;
+      color: #f2f2f2; 
+      background-color: inherit;
+      font: inherit;
+}
+.topnav a:hover,
+.topnav select:hover{
+      color: black;
+      background-color: gray;
+}
+.topnav option{
+      background-color: gray;
+      font: 20px;
+}
+.leftcolumn {   
+      float: left;
+      width: 75%;
+}
+.rightcolumn{
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+}
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+.card{
+      background-color: lightseagreen;
+      padding: 20px;
+      margin-top: 20px;
+}
+.card a{
+      font-size: 30px;
+}
+.card img{
+      max-width: 300px;
+}
+#downloads a{
+      font-size: 20px;
+      display: block;
+      padding: 5px;
+}
+.site_footer{
+      padding: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      background-image: url(vapor2.jpg);
+      background-size: cover;
+}
+.fa {
+      padding: 20px;
+      font-size: 10px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+.fa :hover{
+      opacity: 0.7;
+}
+.fa-facebook {
+      background: #3B5998;
+      color: white;
+}
+.fa-twitter {
+      background: #55ACEE;
+      color: white;
+}    
+.fa-linkedin {
+      background: #007bb5;
+      color: white;
+}
+.fa-youtube {
+      background: #bb0000;
+      color: white;
+}
+.fa-vimeo {
+      background: #45bbff;
+      color: white;
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {   
+     width: 100%;
+     padding: 0;
+  }
+}
+@media screen and (max-width: 300px){
+         span.psw {
+            display: block;
+            float: none;
+         }
+         .cancelbtn {
+            width: 100%;
+         }
+}
+@media screen and (max-width: 600px) {
+      .topnav a,
+      .topnav select,
+      .topnav option {
+        float: none;
+        width: 100%;
+      }
+}
