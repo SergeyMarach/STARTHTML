@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC
+      <img src="logo_small.jpg">
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo_small.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+    </script>
+  </head>
+  <body>
+      <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="smile1.jpg" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>   
+            </div> 
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="submit">Login</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+      </div>
+    <header>
+        <img id="site_logo" src="logo.jpg">
+        <button id="login_button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <button id="signup_button" onclick="alert('Achtung! Sie sind in Gefahr!')" style="width:auto;">Sign up</button>
+        <h1>Vapor chambers. Behind the scenes</h1> 
+        
+        <div class="topnav">
+            <a href="#home">Home </a>
+            <a href="#services">Services</a>
+            <a href="#downloads">Downloads</a>
+            <a href="#site_footer">Contact</a>
+            <select class title="Select your prefered language">
+                  <option value="en">En</option>
+                  <option value="de">Ru</option>
+            </select>
+      </div>
+      </header>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card" id="home">
+            <h1>About us</h1>
+            <h5>General information</h5>
+            <img src="home.jpg">
+            <p>Our like a mission is to provide like "bla bla bla" to our customers. 
+              We work closely to our clients and make everyone happy. 
+              We have a lot of to do with cooling. Colling is like our life's mission. VC' design and bla bla bla 
+              And again: bla bla bla 
+              Al the site is about is just container of needless information
+            </p>
+          </div>
+          <div class="card" id="services">
+            <h1>What we offer</h1>
+            <h5>Our services that make costumer happy </h5>
+            <img src="service.jpg">
+            <p>When describing the services you offer, 
+              it’s very easy to get caught up in the ‘we’. 
+              But why wouldn’t you? The services page is about what ‘we’ (your company) can do,
+               and how great you are at it. 
+            </p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card" id="downloads">
+                <h2>Materials to download</h2>
+                <h5>Here you can find additional information</h5>
+                  <a href="" class="todownload">Brochure.pdf</a>
+                  <a href="" class="todownload">Solution_Reports.pdf</a>
+                  <a href="" class="todownload">Our_clients.pdf</a>
+            </div>
+            <div class="card">
+                <h3>We are in social networks</h3>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-vimeo"></a>
+            </div>
+        </div>
+      </div>
+      <footer id="site_footer" class="site_footer">
+        <p>&reg VC Corporation, 2019</p>
+        <p>More news here: <a href="">Google</a><sup>TM</sup></p>
+        <p>220056 Minsk, Dziarzhinkij ave, 5 Belarus, tel: 000000000000</p>
+      </footer>
+  <script>
+    var modal=document.getElementById("id01");
+    window.onclick=function(event){
+      if (event.target==modal){
+        modal.style.display="none";
+      }
+    }
+  </script>
+  </body>
+</html>
